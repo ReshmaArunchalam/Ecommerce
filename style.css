@@ -1,0 +1,127 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .searchInput {
+    border: none;
+    background: transparent;
+    color: lightgray;
+  }
+  
+  .slider {
+    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73") no-repeat center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .sliderTitle {
+    font-size: 40px;
+    color: white;
+    z-index: 1;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .feature {
+    text-align: center;
+  }
+  
+  .featureIcon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .featureTitle {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 20px;
+  }
+  
+  .productImg {
+    width: 50%;
+  }
+  
+  .productDetails {
+    padding: 20px;
+  }
+  
+  .productTitle {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .productButton {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 480px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    .slider {
+      height: 40vh;
+      text-align: center;
+    }
+  
+    .features {
+      flex-direction: column;
+    }
+  
+    .product {
+      flex-direction: column;
+    }
+  
+    .productImg {
+      width: 80%;
+    }
+  }
+  
